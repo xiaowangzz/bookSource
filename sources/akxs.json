@@ -5,7 +5,7 @@
     "search": {
         "url": "https://www.akzw.cc/home/search@post->q=${key}&action=search",
 		"charset": "utf-8",
-        "list": ".table>tbody>tr",
+        "list": "tbody>tr:nth-child(n+1)",
         "name": "td:nth-child(1)>a",
         "author": "td:nth-child(3)",
         "cover": "",
@@ -22,7 +22,7 @@
         "catalog": ""
     },
     "catalog": {
-        "list": ".panel panel-default:nth-child(1)>dl>dd",
+        "list": "div>div>dl:nth-child(1)>dd",
         "name": "a",
         "chapter": "a"
     },
