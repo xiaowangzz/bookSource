@@ -1,0 +1,35 @@
+{
+    "name": "bamxs",
+    "url": "m.bamxs.com",
+    "version": 100,
+    "search": {
+        "url": "http://m.bamxs.com/search.asp?word=${key}",
+		"charset": "utf-8",
+        "list": ".booklist_a>ul>li",
+        "name": "div.list_a>div.main>a>strong>font",
+        "author": "div.list_a>div.main>span:nth-child(1)",
+        "cover": "",
+        "detail": "div.list_a>div.main>span.intro"
+    },
+    "detail": {
+        "name": "div.sosuo>ul>li>a",
+        "author": "div.jie>span:nth-child(5)>a",
+        "cover": "",
+        "summary": ".novelinfo",
+        "status": "div.jie>span:nth-child(2)",
+        "update": "div.jie>span:nth-child(4)",
+        "lastChapter": ".jie>span:nth-child(4)",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".sso_a>ul>li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".novelinfvie",
+        "purify": [
+            "111111111"
+        ]
+    }
+}
