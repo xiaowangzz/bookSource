@@ -1,0 +1,35 @@
+{
+    "name": "www.8xsk.com",
+    "url": "www.8xsk.com",
+    "version": 105,
+    "search": {
+        "url": "https://www.8xsk.com/search.html?searchkey=${key}",
+		"charset": "utf-8",
+        "list": "#imgload>ul",
+        "name": "li>a",
+        "author": "h3>a",
+        "cover": "",
+        "detail": "li>a"
+    },
+    "detail": {
+        "name": "meta[property=og:title]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "#chapterList>li",
+        "name": "a>span",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#TextContent",
+        "purify": [
+            "111111111"
+        ]
+    }
+}
