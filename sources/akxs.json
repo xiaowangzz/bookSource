@@ -1,0 +1,35 @@
+{
+    "name": "akxs",
+    "url": "www.akzw.cc",
+    "version": 100,
+    "search": {
+        "url": "https://www.akzw.cc/home/search@post->q=${key}&action=search",
+		"charset": "utf-8",
+        "list": ".table>tbody>tr",
+        "name": "td:nth-child(1)>a",
+        "author": "td:nth-child(3)",
+        "cover": "",
+        "detail": "td:nth-child(2)>a"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".panel panel-default:nth-child(1)>dl>dd",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#BookText",
+        "purify": [
+            "qweasdz"
+        ]
+    }
+}
