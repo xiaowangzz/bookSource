@@ -1,7 +1,7 @@
 {
     "name": "akxs",
     "url": "www.akzw.cc",
-    "version": 102,
+    "version": 100,
     "search": {
         "url": "https://www.akzw.cc/home/search@post->q=${key}&action=search",
 		"charset": "utf-8",
