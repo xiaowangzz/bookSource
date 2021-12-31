@@ -1,7 +1,7 @@
 {
     "name": "akxs",
     "url": "www.akzw.cc",
-    "version": 100,
+    "version": 102,
     "search": {
         "url": "https://www.akzw.cc/home/search@post->q=${key}&action=search",
 		"charset": "utf-8",
@@ -22,7 +22,7 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "div>div>dl:nth-child(2)>dd",
+        "list": ".panel panel-default:nth-child(2)>dd",
         "name": "a",
         "chapter": "a"
     },

@@ -1,15 +1,15 @@
 {
     "name": "www.8xsk.com",
     "url": "www.8xsk.com",
-    "version": 105,
+    "version": 101,
     "search": {
         "url": "https://www.8xsk.com/search.html?searchkey=${key}",
 		"charset": "utf-8",
         "list": "#imgload>ul>li",
-        "name": "a",
-        "author": "h3>a",
+        "name": "h3>a",
+        "author": "em>span:nth-child(2)",
         "cover": "",
-        "detail": "a"
+        "detail": "p.fs16 mb10 c_strong g_ells"
     },
     "detail": {
         "name": "meta[property=og:title]@attr->content",
