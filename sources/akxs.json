@@ -1,15 +1,15 @@
 {
     "name": "akxs",
     "url": "www.akzw.cc",
-    "version": 102,
+    "version": 103,
     "search": {
         "url": "https://www.akzw.cc/home/search@post->q=${key}&action=search",
 		"charset": "utf-8",
-        "list": "tbody>tr:nth-child(n+1)",
+        "list": "tbody>tr",
         "name": "td:nth-child(2)>a",
         "author": "td:nth-child(4)",
         "cover": "",
-        "detail": "td:nth-child(3)>a"
+        "detail": "td:nth-child(2)>a"
     },
     "detail": {
         "name": "meta[property=og:novel:book_name]@attr->content",
