@@ -22,7 +22,7 @@
         "catalog": ""
     },
     "catalog": {
-        "list": ".panel panel-default:nth-child(2)>dl>dd",
+        "list": ".panel-body panel-chapterlist>dd",
         "name": "a",
         "chapter": "a"
     },
