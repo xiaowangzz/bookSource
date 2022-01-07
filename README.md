@@ -1,9 +1,10 @@
 # booksource
 厚墨书院
 
-https://cdn.jsdelivr.net/gh/xiaowangzz/bookSource/link.json
 
-https://purge.jsdelivr.net/gh/xiaowangzz/bookSource/link.json
+https://cdn.jsdelivr.net/gh/xiaowangzz/bookSource@vv1.0/link.json
+
+https://purge.jsdelivr.net/gh/xiaowangzz/bookSource@vv1.0/link.json
 
 jsdelivr 缓存刷新方法
 

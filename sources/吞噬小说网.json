@@ -1,7 +1,7 @@
 {
     "name": "吞噬小说网",
     "url": "www.tsxsw.net",
-    "version": 105,
+    "version": 100,
     "search": {
         "url": "http://www.tsxsw.net/search.php@post->keyword=${key}",
 		"charset": "gbk",

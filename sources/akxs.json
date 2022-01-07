@@ -1,18 +1,18 @@
 {
-    "name": "www.8xsk.com",
-    "url": "www.8xsk.com",
-    "version": 101,
+    "name": "akxs",
+    "url": "www.akzw.cc",
+    "version": 103,
     "search": {
-        "url": "https://www.8xsk.com/search.html?searchkey=${key}",
+        "url": "https://www.akzw.cc/home/search@post->q=${key}&action=search",
 		"charset": "utf-8",
-        "list": "#imgload>ul>li",
-        "name": "h3>a",
-        "author": "em>span:nth-child(2)",
+        "list": "tbody>tr:nth-child(n+1)",
+        "name": "td:nth-child(2)>a",
+        "author": "td:nth-child(4)",
         "cover": "",
-        "detail": "p.fs16 mb10 c_strong g_ells"
+        "detail": "td:nth-child(2)>a"
     },
     "detail": {
-        "name": "meta[property=og:title]@attr->content",
+        "name": "meta[property=og:novel:book_name]@attr->content",
         "author": "meta[property=og:novel:author]@attr->content",
         "cover": "meta[property=og:image]@attr->content",
         "summary": "meta[property=og:description]@attr->content",
@@ -22,14 +22,14 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "#chapterList>li",
-        "name": "a>span",
+        "list": ".col-md-3",
+        "name": "a",
         "chapter": "a"
     },
     "chapter": {
-        "content": "#TextContent",
+        "content": "#BookText",
         "purify": [
-            "111111111"
+            "qweasdz"
         ]
     }
 }
