@@ -28,6 +28,7 @@
     },
     "chapter": {
         "content": "#BookText",
+		"page": "a:matches(下一页)",
         "purify": [
             "qweasdz"
         ]
