@@ -9,7 +9,8 @@
         "name": "h3>a",
         "author": "em>span:nth-child(2)",
         "cover": "",
-        "detail": "p.fs16 mb10 c_strong g_ells"
+        "detail": "h3>a",
+		 "summary":"p:nth-child(1)"
     },
     "detail": {
         "name": "meta[property=og:title]@attr->content",
