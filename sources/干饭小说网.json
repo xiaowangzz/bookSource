@@ -1,0 +1,34 @@
+{
+    "name": "干饭小说",
+    "url": "www.ganfanxs.com",
+    "version": 100,
+    "search": {
+        "url": "http://www.ganfanxs.com/searchok.html@post->searchkey=${key}&action=login",
+		"charset": "utf-8",
+        "list": ".keywords>div",
+        "name": "div>div:nth-child(1)>h4>a",
+		"detail": "div>div:nth-child(1)>h4>a",
+        "author": "div>div:nth-child(1)>.author:nth-child(1)>a",
+        "cover": "",
+		 "summary":"div>div:nth-child(1)>.update"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "#list-chapterAll>dd",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".readcontent>div>p"
+       
+    }
+}
