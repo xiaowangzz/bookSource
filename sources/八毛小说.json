@@ -1,15 +1,16 @@
 {
-    "name": "bamxs",
+    "name": "八毛小说",
     "url": "m.bamxs.com",
-    "version": 101,
+    "version": 100,
     "search": {
         "url": "http://m.bamxs.com/search.asp?word=${key}",
-		"charset": "utf-8",
-        "list": ".booklist_a>ul>li",
-        "name": "div>.main>a>strong>font",
-        "author": ".list_a>div.main>span:nth-child(1)",
-        "cover": "",
-        "detail": ".list_a>div.main>span.intro"
+		"charset": "gb2312",
+        "list": ".booklist_a>ul>li>div",
+        "name": ".main>a>strong",
+        "author": ".main>span:nth-child(4)",
+        "cover": ".img>a>img",
+        "detail": ".main>a",
+        "summary": ".intro"
     },
     "detail": {
         "name": "div.sosuo>ul>li>a",
@@ -27,9 +28,7 @@
         "chapter": "a"
     },
     "chapter": {
-        "content": ".novelinfvie",
-        "purify": [
-            "111111111"
-        ]
+        "content": ".novelinfvie"
+       
     }
 }

@@ -5,12 +5,12 @@
     "search": {
         "url": "http://www.ganfanxs.com/searchok.html@post->searchkey=${key}&action=login",
 		"charset": "utf-8",
-        "list": ".keywords>div",
-        "name": "div>div:nth-child(1)>h4>a",
-		"detail": "div>div:nth-child(1)>h4>a",
-        "author": "div>div:nth-child(1)>.author:nth-child(1)>a",
+        "list": ".bookbox>div",
+        "name": "h4>a",
+		"detail": "h4>a",
+        "author": ".author>a",
         "cover": "",
-		 "summary":"div>div:nth-child(1)>.update"
+		 "summary":".update"
     },
     "detail": {
         "name": "meta[property=og:novel:book_name]@attr->content",
@@ -28,7 +28,7 @@
         "chapter": "a"
     },
     "chapter": {
-        "content": ".readcontent>div>p"
+        "content": ".readcontent>div:nth-child(3)"
        
     }
 }

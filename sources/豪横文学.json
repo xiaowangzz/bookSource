@@ -1,5 +1,5 @@
 {
-    "name": "hhwx",
+    "name": "豪横文学hhwx",
     "url": "m.haohengwx.net",
     "version": 100,
     "search": {
@@ -8,9 +8,8 @@
         "list": ".sone",
         "name": "a",
 		"detail": "a",
-        "author": "span>a",
-        "cover": "",
- 
+        "author": "span>a"
+
     },
     "detail": {
         "name": "meta[property=og:novel:book_name]@attr->content",
@@ -20,19 +19,17 @@
         "status": "meta[property=og:novel:status]@attr->content",
         "update": "meta[property=og:novel:update_time]@attr->content",
         "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
-        "catalog": ".infolink>li:nth-child(2)>a"
+        "catalog": ".gochapter>a"
     },
     "catalog": {
         "list": ".chapters>li",
         "name": "a",
         "chapter": "a",
-		"page": "a:matches(下一页)",
+		"page": "a:matches(下一页)"
     },
     "chapter": {
         "content": "#articlecontent>div>p",
-		"page": "a:matches(下一页)",
-        "purify": [
-            "qweasdz"
-        ]
+		"page": "a:matches(下一页)"
+   
     }
 }

@@ -1,0 +1,33 @@
+{
+    "name": "大众小说",
+    "url": "www.dzwx520.com",
+    "version": 100,
+    "search": {
+        "url": "http://www.dzwx520.com/modules/article/search.php?searchkey=${key}",
+		"charset": "gbk",
+        "list": "tbody>tr:nth-child(n+1)",
+        "name": "td:nth-child(1)>a",
+        "author": "td:nth-child(3)",
+        "detail": "td:nth-child(1)>a",
+		"summary":"td:nth-child(2)"
+    },
+    "detail": {
+        "name": "h1",
+        "author": ".infos>span:nth-child(1)",
+        "cover": ".pic>img",
+        "summary": ".book_info>p",
+        "status": ".infos>span:nth-child(3)",
+        "update": "",
+        "lastChapter": ".upd>a",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".section>div>ul>li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#htmlContent"
+       
+    }
+}
