@@ -1,0 +1,34 @@
+{
+    "name": "圣墟小说",
+    "url": "www.shengxuxu.com",
+    "version": 100,
+    "search": {
+        "url": "http://www.shengxuxu.com/search.html?searchtype=novelname&searchkey=${key}",
+		"charset": "utf-8",
+        "list": ".librarylist>li",
+        "name": ".pt-ll-r>.info>span:nth-child(1)>a",
+        "author": ".pt-ll-r>.info>span:nth-child(2)",
+        "detail": ".pt-ll-r>.info>span:nth-child(1)>a",
+		"cover": ".pt-ll-l>a>img@attr->src",
+		"summary":".pt-ll-r>.intro"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".dirlist>li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#chaptercontent"
+       
+    }
+}
