@@ -1,0 +1,34 @@
+{
+    "name": "55555s",
+    "url": "www.55555s.cc",
+    "version": 100,
+    "search": {
+        "url": "http://www.55555s.cc/modules/article/search.php@post->searchkey=${key}",
+		"charset": "gbk",
+        "list": "#alist>div",
+        "name": "div:nth-child(2)>div:nth-child(1)>h2>a",
+        "detail": "div:nth-child(2)>div:nth-child(1)>h2>a",
+        "author": "div:nth-child(2)>div:nth-child(1)>span",
+        "cover": "div:nth-child(1)>a>img",
+		"summary":"div:nth-child(2)>div:nth-child(3)"
+    },
+    "detail": {
+        "name": "h1",
+        "author": ".infos>span:nth-child(1)",
+        "cover": "",
+        "summary": "",
+        "status": ".infos>span:nth-child(3)",
+        "update": "",
+        "lastChapter": ".infos>a:nth-child(2)",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".liebiao>ul>li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content>p"
+       
+    }
+}

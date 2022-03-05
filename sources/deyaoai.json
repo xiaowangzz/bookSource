@@ -1,0 +1,34 @@
+{
+    "name": "deyaoai",
+    "url": "www.deyaoai.cc",
+    "version": 100,
+    "search": {
+        "url": "https://www.deyaoai.com/Home/search/index@post->action=search&q=${key}",
+		"charset": "utf-8",
+        "list": "#news_list>div",
+        "name": "div:nth-child(2)>a:nth-child(1)",
+        "detail": "div:nth-child(2)>a:nth-child(1)",
+        "author": "div:nth-child(2)>a:nth-child(2)",
+        "cover": "div:nth-child(3)>a>img",
+		"summary":"div:nth-child(2)>a:nth-child(3)"
+    },
+    "detail": {
+        "name": "h1",
+        "author": ".nums>span:nth-child(1)",
+        "cover": ".book-img>img",
+        "summary": ".introtxt",
+        "status": ".state",
+        "update": ".nums>span:nth-child(2)",
+        "lastChapter": ".leibp>a",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "#volume>div>ul>li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": ".content"
+       
+    }
+}
