@@ -8,7 +8,7 @@
 		"list": "#nr",
 		"name": "dd>h3>a",
 		"detail": "dd>h3>a",
-        "author": ".book_other:nth-child(1)>span:nth-child(1)",
+        "author": ".book_other>span:nth-child(1)",
         "cover": "dt>a>img",
 		"lastChapter":".book_other:nth-child(2)>a",
 		"summary":".book_des"
@@ -25,7 +25,7 @@
 		"url":""
     },
     "catalog": {
-        "list": "#chapterList:>li",
+        "list": "#chapterList>li",
         "name": "a",
         "chapter": "a"
     },
