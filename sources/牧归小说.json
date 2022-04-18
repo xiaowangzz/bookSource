@@ -1,0 +1,35 @@
+{
+    "name": "牧归小说",
+    "url": "www.muguixs.com",
+    "version": 100,
+    "search": {
+        "url": "http://www.muguixs.com/search/@post->searchkey=${key}",
+		"charset": "utf-8",
+		"list": "#nr",
+		"name": "dd>h3>a",
+		"detail": "dd>h3>a",
+        "author": ".book_other:nth-child(1)>span:nth-child(1)",
+        "cover": "dt>a>img",
+		"lastChapter":".book_other:nth-child(2)>a",
+		"summary":".book_des"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": "",
+		"url":""
+    },
+    "catalog": {
+        "list": "#chapterList:>li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#TextContent"
+    }
+}
