@@ -30,6 +30,7 @@
         "chapter": "a"
     },
     "chapter": {
-        "content": "#TextContent"
+        "content": "#TextContent",
+		"page": "a:matches(下一页)"
     }
 }
