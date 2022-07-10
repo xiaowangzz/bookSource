@@ -1,0 +1,32 @@
+{
+    "name": "base",
+    "url": "www.changeubrand.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.changeubrand.com/Home/search/index@post->q=${key}&action=search",
+		"charset": "utf-8",
+		"list": "#news_list>div:nth-child(n+1)",
+		"name": "div:nth-child(2)>.rank_i_l_a_book",
+		"detail": "div:nth-child(2)>.rank_i_l_a_book",
+        "author": "div:nth-child(2)>.rank_i_l_a_author",
+        "cover": "div:nth-child(3)>a>img"  
+    },
+   "detail": {
+        "name": "h1",
+        "author": ".nums>span:nth-child(1)",
+        "cover": ".book-img>img",
+        "summary": ".book-dec",
+        "status": ".state",
+        "update": ".zuixin>a",
+        "lastChapter": ".zuixin>a",
+        "catalog": ""
+    },
+     "catalog": {
+        "list": ".chapter-list>li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content"
+    }
+}

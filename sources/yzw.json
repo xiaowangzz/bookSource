@@ -1,0 +1,35 @@
+{
+    "name": "御宅屋",
+    "url": "m.yzwxs.org",
+    "version": 100,
+    "search": {
+        "url": "http://m.yzwxs.org/s.php@post->s=${key}&type=articlename",
+		"charset": "gbk",
+        "list": ".cover>p",
+        "name": "a:nth-child(2)",
+		"detail": "a:nth-child(2)",
+        "author": "a:nth-child(3)",
+        "cover": "a:nth-child(1)"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".chapter>li",
+        "name": "a",
+        "chapter": "a",
+		"page": "a:matches(下一页)"
+    },
+    "chapter": {
+        "content": "#nr1",
+		"page": "a:matches(下一页)"
+       
+    }
+}
