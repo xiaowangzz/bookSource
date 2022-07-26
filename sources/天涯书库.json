@@ -1,16 +1,16 @@
 {
-    "name": "八一中文",
-    "url": "www.81zw.com",
+    "name": "天涯书库",
+    "url": "www.tianyabook.com",
     "version": 100,
     "search": {
-        "url": "https://www.81zw.com/search.php?q=${key}",
-		"charset": "utf-8",
-        "list": ".result-list>div",
-        "name": "div:nth-child(2)>h3>a",
-        "detail": "div:nth-child(2)>h3>a",
-        "author": "div:nth-child(2)>div>p:nth-child(1)",
-        "cover": "div:nth-child(1)>a>img",
-		"summary":"div:nth-child(2)>p"
+        "url": "https://www.tianyabook.com/modules/article/search.php?searchkey=${key}",
+		"charset": "gbk",
+		"list": ".mySearch>ul",
+		"name": "li:nth-child(1)>a",
+		"detail": "li:nth-child(1)>a",
+        "author": "li:nth-child(3)",
+		"summary": "li:nth-child(2)"
+  
     },
     "detail": {
         "name": "meta[property=og:novel:book_name]@attr->content",
@@ -20,15 +20,17 @@
         "status": "meta[property=og:novel:status]@attr->content",
         "update": "meta[property=og:novel:update_time]@attr->content",
         "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
-        "catalog": ""
+        "catalog": "",
+		"url":""
     },
     "catalog": {
-        "list": "#list>dl>dd",
+        "list": "#list-chapterAll>dl>dd",
         "name": "a",
-        "chapter": "a"
+        "chapter": "a",
+		"page": "a:matches(下一页)"
     },
     "chapter": {
-        "content": "#content"
-       
+        "content": "#htmlContent",
+		"page": "a:matches(下一页)"
     }
 }
