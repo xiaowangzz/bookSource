@@ -1,0 +1,35 @@
+{
+    "name": "飞魔幻",
+    "url": "www.fmh49.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.fmh49.com/home/search@post->q=${key}&action=search",
+		"charset": "UTF-8",
+        "list": "div>dl>dd",
+        "name": "h3>a",
+		"detail": "h3>a",
+        "author": "span",
+        "cover": "",
+		"summary":"p"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".mulu>ul>li",
+        "name": "a",
+        "chapter": "a",
+		"page": "a:matches(下一页)"
+    },
+    "chapter": {
+        "content": "#content",
+		"page": "a:matches(下一页)"
+    }
+}

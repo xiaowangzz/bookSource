@@ -1,0 +1,35 @@
+{
+    "name": "烈火中文网",
+    "url": "m.liehuozw.com",
+    "version": 100,
+    "search": {
+        "url": "https://m.liehuozw.com/s.php@post->s=${key}&type=articlename",
+		"charset": "gbk",
+		"list": ".searchresult>p",
+		"name": "a",
+		"detail": "a",
+        "author": "span>a",
+        "cover": ""  
+    },
+    "detail": {
+        "name": "h3",
+        "author": ".infotype>p:nth-child(1)",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": ".intro>p",
+        "update": ".infotype>p:nth-child(3)",
+        "status": ".infotype>p:nth-child(2)",
+        "lastChapter": ".infotype>p:nth-child(4)>a",
+        "catalog": ".gochapter>a",
+		"url":".gochapter>a"
+    },
+    "catalog": {
+        "list": ".chapters>li",
+        "name": "a",
+        "chapter": "a",
+		"page": "a:matches(下一页)"
+    },
+    "chapter": {
+        "content": "#novelcontent",
+		"page": "a:matches(下一页)"
+    }
+}
