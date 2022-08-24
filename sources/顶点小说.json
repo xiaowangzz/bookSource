@@ -1,0 +1,35 @@
+{
+    "name": "顶点小说",
+    "url": "m.ddxs.com",
+    "version": 100,
+    "search": {
+        "url": "https://m.ddxs.com/search.php@post->keyword=${key}",
+		"charset": "utf-8",
+		"list": ".cover>p",
+		"name": "a",
+		"detail": "a",
+        "author": "p",
+        "cover": ""  
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ".book_more>a",
+		"url":".book_more>a"
+    },
+    "catalog": {
+        "list": ".list-striped>dd",
+        "name": "a",
+        "chapter": "a",
+		"page": "a:matches(下一页)"
+    },
+    "chapter": {
+        "content": "#nr1",
+		"page": "a:matches(下一页)"
+    }
+}

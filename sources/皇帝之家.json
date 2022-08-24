@@ -1,0 +1,35 @@
+{
+    "name": "皇帝之家",
+    "url": "www.huangdizhijia.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.huangdizhijia.com/plus/search.php?q=${key}&kwtype=0",
+		"charset": "utf-8",
+		"list": ".subject-list>li",
+		"name": ".info>h2>a",
+		"detail": ".info>h2>a",
+        "author": ".info>.pub",
+        "cover": ".pic>a>img"  
+    },
+    "detail": {
+        "name": "h1",
+        "author": ".info>span:nth-child(1)",
+        "cover": ".nbg>img",
+        "summary": ".intro",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ".online-read>a:nth-child(1)",
+		"url":".online-read>a:nth-child(1)"
+    },
+    "catalog": {
+        "list": ".tagCol>ul>li",
+        "name": "a",
+        "chapter": "a",
+		"page": "a:matches(下一页)"
+    },
+    "chapter": {
+        "content": ".tagCol>p",
+		"page": "a:matches(下一页)"
+    }
+}
